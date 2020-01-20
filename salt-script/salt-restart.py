@@ -172,7 +172,7 @@ class DeployManager:
             for s in self.services:
                 package_target_path = self.target_path.format(
                     package_name=s.package_name)
-                get_shell_cmd = "wget {}?token={} -O {}/entrypoint.sh".format(ENTRYPOINT_URL,
+                get_shell_cmd = "wget {}?token={} -O {}/salt-entrypoint.sh".format(ENTRYPOINT_URL,
                     s.token, package_target_path)
                 self.salt_client.cmd_task(n, get_shell_cmd)
                 chmod_shell_cmd = "chmod +x {}/salt-entrypoint.sh".format(

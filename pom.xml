@@ -72,31 +72,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.2.0</version>
-				<!-- <configuration>
-					<archive>
-						<manifestFile>target/classes/META-INF/MANIFEST.MF</manifestFile>
-					</archive>
-				</configuration> -->
-				<configuration>
-					<classesDirectory>target/classes/</classesDirectory>
-					<archive>
-						<manifest>
-							<mainClass>com.example.demo.SpringBootDemoApplication</mainClass>
-							<!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
-							<useUniqueVersions>false</useUniqueVersions>
-							<addClasspath>true</addClasspath>
-							<!-- <classpathPrefix>lib/</classpathPrefix> -->
-						</manifest>
-						<!-- <manifestEntries>
-							<Class-Path>.</Class-Path>
-						</manifestEntries> -->
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>

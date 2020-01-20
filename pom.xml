@@ -88,11 +88,11 @@
 							<!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
 							<useUniqueVersions>false</useUniqueVersions>
 							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
+							<!-- <classpathPrefix>lib/</classpathPrefix> -->
 						</manifest>
-						<manifestEntries>
+						<!-- <manifestEntries>
 							<Class-Path>.</Class-Path>
-						</manifestEntries>
+						</manifestEntries> -->
 					</archive>
 				</configuration>
 			</plugin>

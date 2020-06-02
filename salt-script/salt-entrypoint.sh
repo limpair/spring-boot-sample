@@ -37,7 +37,7 @@ downloadFile (){
 }
 start() {
     cd $WORK_DIR
-    java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar ${APP_NAME}-${APP_VERSION}.jar > /var/log/$APP_NAME.log 2>&1 &
+    java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar $APP_NAME.jar > /var/log/$APP_NAME.log 2>&1 &
 }
 stop() {
     kill -9 $(ps aux | grep java | grep demo | grep -v entrypoint | awk '{print $2}')
